@@ -1,3 +1,23 @@
+// ── LOADING SCREEN ──
+function hideLoadingScreen() {
+  const loadingScreen = document.getElementById('loadingScreen');
+  if (loadingScreen && !loadingScreen.classList.contains('hidden')) {
+    loadingScreen.classList.add('hidden');
+  }
+}
+
+// Hide loading screen dengan multiple triggers untuk memastikan
+document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(hideLoadingScreen, 2000);
+});
+
+window.addEventListener('load', () => {
+  setTimeout(hideLoadingScreen, 2000);
+});
+
+// Fallback: hide jika terlalu lama
+setTimeout(hideLoadingScreen, 2000);
+
 // ── CURSOR ──
 const cursor = document.getElementById('cursor');
 const cursorFollow = document.getElementById('cursorFollow');

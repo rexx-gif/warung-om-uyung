@@ -4,11 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Warung Om Uyung — Makan. Minum. Santai.</title>
+<meta name="description" content="Warung Om Uyung — tempat nongkrong favorit di Bondowoso. Sosis, mie instan, kopi, dan minuman segar.">
+<meta property="og:title" content="Warung Om Uyung">
+<meta property="og:description" content="Makan. Minum. Santai. Buka setiap hari 07.00–23.00">
+<meta property="og:image" content="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<!-- LOADING SCREEN -->
+<div class="loading-screen" id="loadingScreen">
+  <div class="loading-content">
+    <img src="logo.png" alt="Loading Logo" class="loading-logo" 
+         onerror="this.onerror=null;this.innerHTML='<span style=\'font-family:var(--font-display);font-size:2rem;letter-spacing:2px;color:var(--accent)\'>OM UYUNG</span>'">
+    <div class="loading-spinner"></div>
+    <div class="loading-text">Loading...</div>
+  </div>
+</div>
 
 <!-- CURSOR -->
 <div class="cursor" id="cursor"></div>
@@ -29,7 +43,11 @@
   </ul>
 
   <div class="nav-actions">
-    <a href="https://wa.me/6281234567890" target="_blank" class="nav-wa">Chat WA ↗</a>
+    <a href="https://wa.me/6282142182427" target="_blank" class="nav-wa" title="Chat WhatsApp">
+      <svg class="wa-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+      </svg>
+    </a>
     <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
       <!-- Moon icon (shown in dark mode) -->
       <svg class="moon-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
@@ -111,7 +129,7 @@
         <div class="stat-label">Menu Pilihan</div>
       </div>
       <div>
-        <div class="stat-num">7</div>
+        <div class="stat-num">6</div>
         <div class="stat-label">Hari Buka</div>
       </div>
     </div>
@@ -119,7 +137,7 @@
   <div class="about-img-wrap reveal">
     <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80" alt="Suasana warung" class="about-img">
     <div class="about-img-border"></div>
-    <div class="about-badge">BUKA<br>07.00–23.00</div>
+    <div class="about-badge">BUKA<br>08.00–23.00</div>
   </div>
 </section>
 
@@ -140,7 +158,7 @@
 
     <div class="menu-card" data-cat="makanan">
       <div class="menu-img-wrap">
-        <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=500&q=80" alt="Frozen Food" class="menu-img">
+        <img src="https://i.pinimg.com/736x/84/f6/ba/84f6ba07141caca34da827b753db80e9.jpg" alt="Frozen Food" class="menu-img">
       </div>
       <span class="menu-tag">Praktis</span>
       <div class="menu-info">
@@ -153,7 +171,7 @@
 
     <div class="menu-card" data-cat="makanan">
       <div class="menu-img-wrap">
-        <img src="https://images.unsplash.com/photo-1628102476629-f8cfd43ca83b?w=500&q=80" alt="Tela Tela Goreng" class="menu-img">
+        <img src="https://i.pinimg.com/1200x/bb/97/cd/bb97cd23f61826eff6b69f3286363bcb.jpg" alt="Tela Tela Goreng" class="menu-img">
       </div>
       <span class="menu-tag">Best Seller</span>
       <div class="menu-info">
@@ -166,7 +184,7 @@
 
     <div class="menu-card" data-cat="makanan">
       <div class="menu-img-wrap">
-        <img src="https://images.unsplash.com/photo-1541529086526-db283c563270?w=500&q=80" alt="Jigor" class="menu-img">
+        <img src="https://i.pinimg.com/736x/25/5b/76/255b7620b8bc9961761cfd776c7ad7b1.jpg" alt="Jigor" class="menu-img">
       </div>
       <div class="menu-info">
         <div class="menu-cat">Makanan</div>
@@ -191,7 +209,7 @@
 
     <div class="menu-card" data-cat="makanan">
       <div class="menu-img-wrap">
-        <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=500&q=80" alt="Snack" class="menu-img">
+        <img src="https://i.pinimg.com/736x/49/19/af/4919af82931b62c59a7cf16c0280fe4b.jpg" alt="Snack" class="menu-img">
       </div>
       <div class="menu-info">
         <div class="menu-cat">Makanan</div>
@@ -203,7 +221,7 @@
 
     <div class="menu-card" data-cat="minuman">
       <div class="menu-img-wrap">
-        <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=500&q=80" alt="Popice" class="menu-img">
+        <img src="https://i.pinimg.com/736x/2e/16/1d/2e161df2587bbcf1894ec24e579b8385.jpg" alt="Popice" class="menu-img">
       </div>
       <span class="menu-tag">Favorit</span>
       <div class="menu-info">
@@ -216,7 +234,7 @@
 
     <div class="menu-card" data-cat="minuman">
       <div class="menu-img-wrap">
-        <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&q=80" alt="Marimas" class="menu-img">
+        <img src="https://i.pinimg.com/1200x/45/07/fd/4507fdad6d96271af132d1f007863f09.jpg" alt="Marimas" class="menu-img">
       </div>
       <div class="menu-info">
         <div class="menu-cat">Minuman</div>
@@ -228,7 +246,7 @@
 
     <div class="menu-card" data-cat="minuman">
       <div class="menu-img-wrap">
-        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&q=80" alt="Kopi" class="menu-img">
+        <img src="https://i.pinimg.com/1200x/19/90/ef/1990efb84a19ea9287f648450af4b541.jpg" alt="Kopi" class="menu-img">
       </div>
       <div class="menu-info">
         <div class="menu-cat">Minuman</div>
@@ -240,7 +258,7 @@
 
     <div class="menu-card" data-cat="minuman">
       <div class="menu-img-wrap">
-        <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=500&q=80" alt="Teh" class="menu-img">
+        <img src="https://i.pinimg.com/736x/63/30/04/633004a76c6f03ab9665d8cce7dade47.jpg" alt="Teh" class="menu-img">
       </div>
       <div class="menu-info">
         <div class="menu-cat">Minuman</div>
@@ -298,14 +316,14 @@
       </li>
       <li>
         <span class="info-label">Jam Buka</span>
-        <span class="info-val">Setiap Hari<br>07.00 — 23.00 WIB</span>
+        <span class="info-val">Senin - Sabtu<br>08.00 — 23.00 WIB</span>
       </li>
       <li>
         <span class="info-label">WhatsApp</span>
-        <span class="info-val">+62 812-3456-7890</span>
+        <span class="info-val">+62 821-4218-2427</span>
       </li>
     </ul>
-    <a href="https://wa.me/6281234567890?text=Halo%20Om%20Uyung!%20Mau%20tanya-tanya%20dulu." target="_blank" class="wa-btn">
+    <a href="https://wa.me/6282142182427?text=Halo%20Om%20Uyung!%20Mau%20tanya-tanya%20dulu." target="_blank" class="wa-btn">
       <svg class="wa-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
       </svg>
@@ -325,12 +343,19 @@
   <div class="footer-socials">
     <a href="#">Instagram</a>
     <a href="#">TikTok</a>
-    <a href="https://wa.me/6281234567890" target="_blank">WhatsApp</a>
+    <a href="https://wa.me/6282142182427" target="_blank">WhatsApp</a>
   </div>
 </footer>
 
 <!-- BACK TO TOP -->
 <a href="#hero" id="btt">↑</a>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/6282142182427" target="_blank" class="floating-wa" title="Chat WhatsApp">
+  <svg class="wa-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+  </svg>
+</a>
 
 <script src="js/main.js"></script>
 </body>
