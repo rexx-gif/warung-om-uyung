@@ -1525,3 +1525,62 @@ footer {
     padding: 1.2rem 0.8rem 0.8rem;
   }
 }
+
+/* ── SEJARAH ── */
+#sejarah {
+  padding: var(--section-pad) var(--side-pad);
+  max-width: 900px;
+  margin: 0 auto;
+}
+.sejarah-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 3rem;
+  position: relative;
+}
+.sejarah-timeline::before {
+  content: '';
+  position: absolute;
+  left: 72px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--accent);
+  opacity: 0.3;
+}
+.timeline-item {
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 3rem;
+  position: relative;
+}
+.timeline-year {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--accent);
+  min-width: 60px;
+  text-align: right;
+  padding-top: 4px;
+  letter-spacing: 1px;
+}
+.timeline-content {
+  padding-left: 2rem;
+  border-left: none;
+}
+.timeline-content h3 {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+.timeline-content p {
+  color: var(--text-muted);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+@media (max-width: 600px) {
+  .sejarah-timeline::before { left: 52px; }
+  .timeline-year { min-width: 44px; font-size: 0.9rem; }
+}
