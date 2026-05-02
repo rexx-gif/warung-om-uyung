@@ -1353,6 +1353,9 @@ footer {
   #hero {
     grid-template-columns: 1fr;
     min-height: 100svh;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.7) 100%), url('../assets/images/fasilitas/warung.jpeg');
+    background-size: cover;
+    background-position: center;
   }
 
   .hero-right {
@@ -1362,6 +1365,12 @@ footer {
   .hero-left {
     padding: 7rem 1.5rem 4rem;
     justify-content: center;
+  }
+
+  .hero-left .hero-title,
+  .hero-left .hero-tag,
+  .hero-left .hero-sub {
+    color: #f5f0e8;
   }
 
   .hero-number {
@@ -1528,9 +1537,7 @@ footer {
 
 /* ── SEJARAH ── */
 #sejarah {
-  padding: var(--section-pad) var(--side-pad);
-  max-width: 900px;
-  margin: 0 auto;
+  padding: var(--section-pad) 4rem;
 }
 .sejarah-timeline {
   display: flex;
@@ -1542,7 +1549,7 @@ footer {
 .sejarah-timeline::before {
   content: '';
   position: absolute;
-  left: 72px;
+  left: 80px;
   top: 0;
   bottom: 0;
   width: 1px;
@@ -1551,36 +1558,37 @@ footer {
 }
 .timeline-item {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
   padding-bottom: 3rem;
   position: relative;
 }
 .timeline-year {
   font-family: var(--font-display);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: var(--accent);
-  min-width: 60px;
+  min-width: 68px;
   text-align: right;
   padding-top: 4px;
   letter-spacing: 1px;
 }
 .timeline-content {
-  padding-left: 2rem;
-  border-left: none;
+  padding-left: 2.5rem;
 }
 .timeline-content h3 {
   font-family: var(--font-display);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   letter-spacing: 2px;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
   color: var(--text);
 }
 .timeline-content p {
   color: var(--text-muted);
-  line-height: 1.7;
-  font-size: 0.95rem;
+  line-height: 1.8;
+  font-size: 1.05rem;
 }
 @media (max-width: 600px) {
-  .sejarah-timeline::before { left: 52px; }
-  .timeline-year { min-width: 44px; font-size: 0.9rem; }
+  .sejarah-timeline::before { left: 56px; }
+  .timeline-year { min-width: 48px; font-size: 1rem; }
+  .timeline-content h3 { font-size: 1.3rem; }
+  .timeline-content p { font-size: 0.95rem; }
 }
