@@ -1402,6 +1402,10 @@ footer {
     font-size: 0.85rem;
   }
 
+  #sejarah {
+    padding: 5rem 1.5rem;
+  }
+
   #menu {
     padding: 5rem 1.5rem;
   }
@@ -1537,7 +1541,7 @@ footer {
 
 /* ── SEJARAH ── */
 #sejarah {
-  padding: var(--section-pad) 4rem;
+  padding: 8rem 4rem;
 }
 .sejarah-timeline {
   display: flex;
