@@ -1273,13 +1273,9 @@ nav.scrolled .nav-logo img {
 footer {
   background: var(--bg);
   border-top: 1px solid var(--border);
-  padding: 4rem 1.5rem;
+  padding: 6rem 0 0;
   position: relative;
   z-index: 10;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
 }
 
 .footer-container {
@@ -1419,33 +1415,6 @@ footer {
   line-height: 1.6;
 }
 
-.footer-socials {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-.footer-socials a {
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
-  border: 1px solid var(--border);
-  border-radius: 50px;
-  color: var(--text);
-  text-decoration: none;
-  font-family: var(--font-mono);
-  font-size: 0.9rem;
-  transition: all 0.3s ease;
-  background: var(--card-bg);
-}
-
-.footer-socials a:hover {
-  background: var(--accent);
-  color: #fff;
-  border-color: var(--accent);
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(21, 128, 61, 0.2);
-}
 
 .mob-break {
   display: none;
