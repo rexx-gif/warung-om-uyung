@@ -2113,6 +2113,10 @@ footer {
     font-size: 0.85rem;
   }
 
+  #sejarah {
+    padding: 5rem 1.5rem;
+  }
+
   #menu {
     padding: 5rem 1.5rem;
   }
@@ -2298,12 +2302,60 @@ footer {
   }
 }
 
-@media (max-width: 480px) {
-  .timeline-content h3 {
-    font-size: 1.8rem;
-  }
-
-  .timeline-content p {
-    font-size: 0.95rem;
-  }
+/* ── SEJARAH ── */
+#sejarah {
+  padding: var(--section-pad) 4rem;
+}
+.sejarah-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 3rem;
+  position: relative;
+}
+.sejarah-timeline::before {
+  content: '';
+  position: absolute;
+  left: 80px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--accent);
+  opacity: 0.3;
+}
+.timeline-item {
+  display: flex;
+  gap: 2.5rem;
+  padding-bottom: 3rem;
+  position: relative;
+}
+.timeline-year {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--accent);
+  min-width: 68px;
+  text-align: right;
+  padding-top: 4px;
+  letter-spacing: 1px;
+}
+.timeline-content {
+  padding-left: 2.5rem;
+}
+.timeline-content h3 {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.6rem;
+  color: var(--text);
+}
+.timeline-content p {
+  color: var(--text-muted);
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+@media (max-width: 600px) {
+  .sejarah-timeline::before { left: 56px; }
+  .timeline-year { min-width: 48px; font-size: 1rem; }
+  .timeline-content h3 { font-size: 1.3rem; }
+  .timeline-content p { font-size: 0.95rem; }
 }
